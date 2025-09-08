@@ -9,16 +9,22 @@ fn main() {
 
 #[test]
 fn variabel(){
+    //variabel di bawah bertipe immutable tidak bisa diubah nilainya dari inisialisasi awal
     let  name = "Haliim pamungkas harjo suyono";
     println!("Haloo {}",name);
 
-
-    let mut num = 20;
+    //variabel di bawah ini bertipe muttable bisa diubah nilainya dari inisisalisasi awal
+    let mut num = 18;
+    let err = "Umur kamu kurang dari 25";
     println!("Umur saya {}", num);
 
-    if(num == 20) {
-        num = 10;
+    if num <= 20 {
+        println!("{}",err);
+         println!("Umur kamu baru {}",num);   
+    } else {
+        num = num;
+        println!("Umur kamu {}",num);  
     }
 
-    println!("Umur baru saya {}",num);    
+    
 }
