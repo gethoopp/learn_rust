@@ -1,9 +1,13 @@
 
 use learn_rust::print_text;
+use learn_rust::number_age;
 fn main() {
     print!("Hello, ");
     print_text();
-    print!("Welcome to rust");
+    println!("Welcome to rust");
+    println!("<--------------->");
+    print!("Umur Kamu adalah");
+    number_age(20);
 }
 
 
@@ -49,8 +53,16 @@ fn number() {
     println!("{}", number_one);
 
 
-let number_onehalf: i8 = i8::try_from(number_one).unwrap();
+    let number_onehalf: i8 = i8::try_from(number_one).unwrap();
     println!("{}", number_onehalf);
+
+
+    let number_two: i16 = 1000;
+    println!("{}", number_two);
+
+    
+    let number_twohalf: i8 = i8::try_from(number_two).unwrap();
+    println!("ini hasil nomor {}", number_twohalf);
 
 
     let number_two: f32 = 0.02;
