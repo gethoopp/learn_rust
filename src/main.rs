@@ -1,14 +1,15 @@
 
-use learn_rust::print_text;
-use learn_rust::number_age;
-fn main() {
-    print!("Hello, ");
-    print_text();
-    println!("Welcome to rust");
-    println!("<--------------->");
-    print!("Umur Kamu adalah");
-    number_age(20);
+#[tokio::main]
+async fn main() {
+    // Jalankan server dari routes
+    learn_rust::run_server().await;
 }
+
+
+//curl -X POST 'http://localhost:8000/register' -H 'Content-Type: application/json' -d '{ "user_id": 2 }'
+//curl -X DELETE 'http://localhost:8000/register/5113c28c9d0d4bfd9d87466a4dca258e'
+//websocat ws://127.0.0.1:3030/ws/1234
+
 
 
 #[test]
